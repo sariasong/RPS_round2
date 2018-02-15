@@ -3,7 +3,13 @@ section.pictures {
   margin-right:50px;
   margin-left:180px;
 }
+img.scissors {
+  padding-left:45px;
+}
 
+img.paper {
+  padding-left:20px;
+}
 section.buttons {
   margin-top:50px;
   margin-left:80px;
@@ -11,9 +17,10 @@ section.buttons {
 }
 
 button.waves-effect {
-  margin-left:130px;
+  
+  margin-left:120px;
   height: 100px;
-  width: 200px;
+  width: 220px;
   font-size: 30px;
   line-height: 25px;
 }
