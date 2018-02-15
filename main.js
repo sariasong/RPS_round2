@@ -1,25 +1,13 @@
 $(document).ready( function() {
-
-
-  function startGame(e) {
-    var choice = e.target.id
-    console.log(e)
-    console.log(e.target)
+  
+  $('.choice').click(function(){
+    var choice = $(this).attr('id')
     console.log(choice)
     var rand = compPlay();
     var result = winLose(choice, rand);
-    var resultDiv = document.getElementById("results")
-    resultDiv.innerHTML = "You chose " + choice + ".<br/> Computer chose " + rand + ".<br/> You " + result + "."
-  }
+    $('#results').html( "You chose " + choice + ".<br/> Computer chose " + rand + ".<br/> You " + result + ".");
+  });
   
-  var choices = document.getElementsByClassName('choice')
-  for (var i in choices) {
-    try {
-      choices[i].addEventListener('click', startGame)
-    } catch(err) {
-      //First load
-    }
-  }
 
   function compPlay() {
     var computerChoice = ["rock", "paper", "scissors"]; 
